@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangover</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <%= yield :inline_javascript %>
+
+</head>
+<body>
+
+
+
+<%= yield %>
+
+</body>
+</html>
